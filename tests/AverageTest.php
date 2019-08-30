@@ -33,6 +33,6 @@ class AverageTest extends TestCase
 
     public function testModeAverage()
     {
-        $this->assertSame(16, $this->average->mode($this->numbers));
+        $this->assertSame(13, $this->average->mode($this->numbers));
     }
 }
