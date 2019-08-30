@@ -1,6 +1,8 @@
 A Simple PHPUnit Example
 ========================
 
+[![Build Status](https://travis-ci.org/zaifastafa/simple-unit-test.svg?branch=master)](https://travis-ci.org/zaifastafa/simple-unit-test)
+
 This is a simple example of unit testing in PHP with PHPUnit. 
 
 Please feel free to download this repository and give the unit tests a try.
