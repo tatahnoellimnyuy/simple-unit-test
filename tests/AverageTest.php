@@ -14,13 +14,19 @@ class AverageTest extends TestCase
 
     public function testMeanAverage()
     {
-        $numbers = [5, 2, 1, 6];
-        $this->assertEquals(3.5, $this->average->mean($numbers));
+        $numbers = [13, 18, 13, 14, 13, 16, 14, 21, 13];
+        $this->assertEquals(15, $this->average->mean($numbers));
     }
 
     public function testMedianAverage()
     {
-        $numbers = [3, 8, 6, 1, 5];
-        $this->assertEquals(5, $this->average->median($numbers));
+        $numbers = [13, 18, 13, 14, 13, 16, 14, 21, 13];
+        $this->assertEquals(14, $this->average->median($numbers));
+    }
+
+    public function testModeAverage()
+    {
+        $numbers = [13, 18, 13, 14, 13, 16, 14, 21, 13];
+        $this->assertSame(13, $this->average->mode($numbers));
     }
 }

@@ -38,9 +38,13 @@ class Average
 
     /**
      * @param array $numbers
+     *
+     * @return false|int|string
      */
     public function mode(array $numbers)
     {
-        // TODO create your own functionality for the `mode` function
+        $values = array_count_values($numbers);
+
+        return array_search(max($values), $values);
     }
 }
